@@ -1,0 +1,19 @@
+.define-colors(false) {
+  @primary-color:                  @config-primary-color;
+  @secondary-color:                @config-secondary-color;
+
+  @body-bg:                        #fff;
+  @text-color:                     #111;
+  @link-color:                     saturate(@primary-color, 10%);
+  @heading-color:                  @text-color;
+  @muted-color:                    hsl(@secondary-hue, min(20%, @secondary-sat), 50%);
+}
+.define-colors(true) {
+  @primary-color:                  @config-primary-color;
+  @secondary-color:                @config-secondary-color;
+
+  @body-bg:                        hsl(@secondary-hue, min(20%, @secondary-sat), 13%);
+}
+@border-radius:                   15px;
+@border-fold-width:               0 34px 34px 0;
+@import "forum/DiscussionList.less";
