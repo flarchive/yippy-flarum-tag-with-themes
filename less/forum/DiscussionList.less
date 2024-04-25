@@ -1,0 +1,595 @@
+.DiscussionList {
+  .item-tag:before {
+    content: "\a";
+    white-space: pre;
+  }
+  .item-terminalPost {
+    position: absolute;
+    font-size: 14px;
+    right:10px;
+    bottom:34px;
+  }
+  .item-excerpt {
+    display:block !important;
+    font-size: 14px;
+    width:100%;
+  }
+  .item-excerpt:after {
+    content: "\a";
+    white-space: pre;
+  }
+  .item-tag {
+    width: 100%;
+    border-top: solid 1px;
+    line-height: 34px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .DiscussionListItem-stats, .DiscussionListItem-count {
+    color: white !important;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  &-discussions > li {
+    .TagLabel-inner {
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 8px;
+      white-space: nowrap;
+    }
+    .item-excerpt, .item-terminalPost {
+      font-size: 12px;
+    }
+  }
+
+  &Item {
+    background: @control-bg;
+    margin: 0 0 4px;
+    padding: 0;
+
+    &-controls .Dropdown-toggle {
+      position: absolute;
+      top: -20px;
+      right: -8px;
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      border-width: 0 35px 35px 0;
+      color: #ffffff;
+    }
+
+    &-info {
+      font-size: 12px;
+    }
+
+    &--unapproved {
+      .DiscussionListItem-content {
+        opacity: 1;
+      }
+    }
+
+    &-badges {
+      .Badge {
+        --size: 20px;
+        box-shadow: -1px 1px 2px #00000038;
+        width: var(--size);
+        height: var(--size);
+        line-height: var(--size);
+
+        &-icon {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  &-loadMore {
+    margin-top: 5px;
+
+    .Button {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.DiscussionListItem-controls .Dropdown-toggle {
+  border-width: 0 !important;
+  top: -1px !important;
+  right: 5px !important;
+}
+
+.StickyNoteOutline, .StickyNoteOutlineTag, .StickyNoteOutlineTab, .StickyNoteOutlineBanner, .BasicOutline, .BasicOutlineTag, .BasicOutlineTab, .BasicOutlineBanner {
+  .DiscussionListItem {
+    &-footer {
+      & {
+        height: 25px;
+      }
+      .PrimaryTagLabel {
+        border-radius: 0 5px 0 5px;
+        left: 0;
+        bottom: 6px;
+      }
+    }
+    &--tabfooter {
+      & {
+        border-radius: 0 0 0 0;
+        height: 24px;
+        left: 0;
+        bottom: 0;
+      }
+      .PrimaryTagLabel {
+        border-radius: 0 0 5px 5px;
+        bottom: -1px;
+        left: 6px;
+      }
+    }
+  }
+}
+
+.StickyNote, .StickyNoteTag, .StickyNoteTab, .StickyNoteBanner, .Basic, .BasicTag, .BasicTab, .BasicBanner {
+  .DiscussionListItem {
+    &-footer {
+      & {
+        height: 24px;
+      }
+      .PrimaryTagLabel {
+        border-radius: 5px;
+        left: 6px;
+        bottom: 6px;
+      }
+    }
+    &--tabfooter {
+      & {
+        height: 28px;
+        border-radius: 0 0 0 0;
+        left: 0;
+        bottom: -5px;
+      }
+      .PrimaryTagLabel {
+        border-radius: 0 0 5px 5px;
+        bottom: -5px;
+        left: 10px;
+      }
+    }
+  }
+}
+
+.FlatBorder, .FlatBorderTag, .FlatBorderTab, .FlatBorderBanner {
+  .DiscussionListItem {
+    &-footer {
+      & {
+        height: 25px;
+      }
+      .PrimaryTagLabel {
+        left: 6px;
+        bottom: 6px;
+      }
+      .DiscussionListItem--secondary {
+        .TagLabel {
+          border-radius: 0 0 0 0;
+        }
+      }
+    }
+    &--tabfooter {
+      & {
+        border-radius: 0 0 0 0;
+        height: 24px;
+        left: 0;
+        bottom: 0;
+      }
+      .PrimaryTagLabel {
+        bottom: -1px;
+        left: 6px;
+      }
+      .DiscussionListItem--secondary {
+        .TagLabel {
+          border-radius: 0 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+.Flat, .FlatTag, .FlatTab, .FlatBanner {
+  .DiscussionListItem {
+    &-footer {
+      & {
+        height: 24px;
+      }
+      .PrimaryTagLabel {
+        left: 6px;
+        bottom: 6px;
+      }
+      .DiscussionListItem--secondary {
+        .TagLabel {
+          border-radius: 0 0 0 0;
+        }
+      }
+    }
+    &--tabfooter {
+      & {
+        height: 28px;
+        border-radius: 0 0 0 0;
+        left: 0;
+        bottom: -2px;
+      }
+      .PrimaryTagLabel {
+        bottom: 3px;
+        left: 10px;
+      }
+      .DiscussionListItem--secondary {
+        .TagLabel {
+          border-radius: 0 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+.StickyNote, .StickyNoteTag, .StickyNoteBanner, .StickyNoteMinimum, .StickyNoteMinimumTag, .StickyNoteMinimumBanner, .Basic, .BasicTag, .BasicBanner, .BasicMinimum, .BasicMinimumTag, .BasicMinimumBanner {
+  .DiscussionListItem {
+    &--secondary {
+      top: 2px;
+    }
+  }
+}
+
+.StickyNoteTab, .BasicTab {
+  .DiscussionListItem {
+    &--secondary {
+      top: 12px;
+    }
+  }
+}
+.StickyNoteOutlineTab, .BasicOutlineTab {
+  .DiscussionListItem {
+    &--secondary {
+      top: 8px;
+    }
+    &--outline {
+      border-radius: @border-radius;
+      position: absolute;
+      width: 100%;
+      left: -1px;
+      pointer-events:none;
+    }
+  }
+}
+
+.FlatBorderTab {
+  .DiscussionListItem {
+    &-footer {
+      border-radius: 0 0 0 4px;
+      position: absolute;
+      width: 100%;
+      left: 0%;
+      bottom: 0%;
+    }
+    &--secondary {
+      top: 4px;
+    }
+    &--outline {
+      position: absolute;
+      width: 100%;
+      left: -1px;
+      pointer-events:none;
+    }
+  }
+}
+
+
+.StickyNoteOutline, .StickyNoteOutlineTag, .StickyNoteOutlineBanner, .BasicOutline, .BasicOutlineTag, .BasicOutlineBanner {
+  .DiscussionListItem {
+    &--secondary {
+      top: 0;
+    }
+    &--outline {
+      border-radius: @border-radius;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      pointer-events:none;
+    }
+  }
+}
+.StickyNote, .StickyNoteTag, .StickyNoteTab, .StickyNoteBanner, .StickyNoteOutline, .StickyNoteOutlineTag, .StickyNoteOutlineTab, .StickyNoteOutlineBanner, .BasicOutline, .BasicOutlineTag, .BasicOutlineTab, .BasicOutlineBanner, .Basic, .BasicTag, .BasicTab, .BasicBanner {
+  .DiscussionListItem {
+    &-footer {
+      border-radius: 0 0 13px 13px;
+      position: absolute;
+      width: 100%;
+      left: 0%;
+      bottom: 0%;
+    }
+  }
+}
+.StickyNote, .StickyNoteTag, .StickyNoteTab, .StickyNoteBanner, .BasicTab {
+  .DiscussionListItem {
+    &--outline {
+      border-radius: @border-radius;
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 10px);
+      bottom: 10px;
+      left: 0;
+      pointer-events:none;
+    }
+  }
+}
+.Flat, .FlatTag, .FlatTab, .FlatBanner {
+  .DiscussionListItem {
+    &--outline {
+      border-radius: unset;
+      pointer-events:none;
+    }
+  }
+}
+
+.FlatBorder, .FlatBorderTag, .FlatBorderBanner, .Flat, .FlatTag, .FlatTab, .FlatBanner {
+  .DiscussionListItem {
+    &--secondary {
+      top: 0;
+    }
+    &--outline {
+      border-radius: unset !important;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      pointer-events:none;
+    }
+  }
+}
+
+.App {
+  .TagLinkButton {
+    display: flex !important;
+  }
+  .item-moreTags {
+    visibility: hidden !important
+  }
+  .IndexPage .DiscussionListItem,
+  .UserPage .DiscussionListItem {
+    &-info {
+      > .item-tags {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .DiscussionListItem {
+    &--primary {
+      font-weight: bold;
+      position: absolute;
+      top: -2px;
+      left: 10px;
+      font-size: 16px;
+    }
+    &--secondary {
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+      font-size: 12px;
+    }
+    
+    &--unreadoutlinecircle {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    &--unreadoutlinesquare {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+    }
+    &--unreadoutlinefolded {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 1px;
+      width: 35px;
+      height: 35px;
+      border-radius: 0 0 0 5px;
+      border-width: @border-fold-width;
+      border-style: solid;
+      z-index: 1;
+    }
+    &--unreadoutlinefolded::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -36px;
+      width: 37px;
+      height: 37px;
+      border-radius: 5px;
+      border-width: 0 35px 35px 0;
+      border-style: solid;
+      border-color: transparent @body-bg
+    }
+  
+    &--readfolded {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 1px;
+      width: 35px;
+      height: 35px;
+      border-radius: 0 0 0 5px;
+      border-width: @border-fold-width;
+      border-style: solid;
+    }
+    &--readfolded::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -36px;
+      width: 37px;
+      height: 37px;
+      border-radius: 5px;
+      border-width: 0 35px 35px 0;
+      border-style: solid;
+      border-color: transparent @body-bg
+    }
+    &-info-edit {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    &-title-edit{
+      margin: 0 0 3px;
+      line-height: 1.3;
+      font-weight: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 20px;
+    }
+
+    &-main {
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+
+    &-badges {
+      margin: 0;
+      width: auto;
+      float: none;
+      position: absolute;
+      right: -7px;
+      top: -4px;
+      display: block;
+    }
+
+    &-author {
+      float: none;
+      margin: 0;
+      display: block;
+
+      &-container {
+        margin-right: 15px;
+        position: relative;
+
+        > .tooltip {
+          width: max-content;
+        }
+      }
+
+    }
+
+    &-content {
+      display: flex;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    &-stats {
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+
+    &-count {
+      margin: 0;
+      padding: 0;
+      float: none;
+      display: block;
+
+      &::before {
+        margin: 0 5px 0 0;
+        padding: 0;
+        float: none;
+      }
+    }
+    &-footer {
+      & {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+      }
+      .PrimaryTagLabel {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        padding-top: 2px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+      }
+    }
+    &--tabfooter {
+      & {
+        position: absolute;
+        width: 100%;
+        background: @body-bg
+      }
+      .PrimaryTagLabel {
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        padding-top: 2px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .App .TagLinkButton {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+@media @phone {
+  .item-terminalPost {
+    display: none !important;
+  }
+  .item-tag {
+    border-top: none;
+  }
+}
+.DiscussionListItem.StickyNote,
+.DiscussionListItem.StickyNoteTag,
+.DiscussionListItem.StickyNoteTab,
+.DiscussionListItem.StickyNoteBanner,
+.DiscussionListItem.Basic,
+.DiscussionListItem.BasicTag,
+.DiscussionListItem.BasicTab,
+.DiscussionListItem.BasicBanner,
+.DiscussionListItem.StickyNoteOutline,
+.DiscussionListItem.StickyNoteOutlineTag,
+.DiscussionListItem.StickyNoteOutlineTab,
+.DiscussionListItem.StickyNoteOutlineBanner,
+.DiscussionListItem.BasicOutline,
+.DiscussionListItem.BasicOutlineTag,
+.DiscussionListItem.BasicOutlineTab,
+.DiscussionListItem.BasicOutlineBanner {
+  border-radius: @border-radius !important;
+}
+
+.DiscussionListItem.Flat,
+.DiscussionListItem.FlatTag,
+.DiscussionListItem.FlatTab,
+.DiscussionListItem.FlatBanner,
+.DiscussionListItem.FlatBorder,
+.DiscussionListItem.FlatBorderTag,
+.DiscussionListItem.FlatBorderTab,
+.DiscussionListItem.FlatBorderBanner {
+  border-radius: unset !important;
+}
