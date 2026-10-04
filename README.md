@@ -2,13 +2,24 @@
 
 > **Read-only archive of released versions of yippy/flarum-tag-with-themes.** Not for installation: use [Packagist](https://packagist.org/packages/yippy/flarum-tag-with-themes) or the [upstream repository](https://github.com/Yippy/flarum-tag-with-themes).
 
-**0** versions archived · Latest: [`v2.0.3`](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v2.0.3) · License: `MIT` · Flarum: `^2.0.0`
+**20** versions archived · Latest: [`v2.0.3`](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v2.0.3) · License: `MIT` · Flarum: `^2.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2024-04-16 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.0) |
+| `v1.0.1` | 2024-04-16 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.1) |
+| `v1.0.10` | 2025-05-29 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.10) |
+| `v1.0.11` | 2025-05-29 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.11) |
+| `v1.0.12` | 2025-05-30 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.12) |
+| `v1.0.13` | 2025-05-30 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.13) |
+| `v1.0.14` | 2025-06-02 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.14) |
+| `v1.0.15` | 2025-06-02 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.15) |
+| `v1.0.16` | 2025-06-04 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.16) |
+| `v1.0.2` | 2024-04-17 | `^1.0.0` | [Browse](https://github.com/flarchive/yippy-flarum-tag-with-themes/tree/archive/v1.0.2) |
+
+[View all 20 versions](https://github.com/flarchive/yippy-flarum-tag-with-themes/tags)
 
 Catalog entry: [packages/yippy-flarum-tag-with-themes.json](https://github.com/flarchive/archive-index/blob/main/packages/yippy-flarum-tag-with-themes.json)
 
